@@ -5,6 +5,7 @@
     <style>
 body {
   background-color: rgb(25, 27, 28);
+  color: silver;
 }
 a:link {
   text-decoration: none;
@@ -22,35 +23,93 @@ a:active {
   text-decoration: none;
   color: #92cbe8;
 }
+img{
+
+margin-left: 8px;
+}
+
 .container{
   width: 100%;
   height: 100%;
   
 }
 .left{
-  width: 20%
+  width: 100px;
   height: 100%;
+  border-right-color: #707274;
+  border-right-style: dotted;
+
   float: left;
   display: block;
+  background-color: rgb(20, 22, 24);
+  
 }
+.topHeader{
+font-size: 48px;
+}
+.conSpan{
+background-color: rgb(22, 24, 26);
+margin-left: 10px;
+width: 25%;
+padding-left: 12px;
+margin-top: 5px;
+
+padding-top: 12px;
+padding-bottom: 8px;
+font-size: 24px;
+border-left-style: solid;
+border-left-color: #707274;
+border-left-width: 1px;
+border-top-style: solid;
+border-top-color: #707274;
+border-top-width: 1px;
+}
+
 .content{
-width: 75%;
+width: 90%;
 text-align: left;
 float: left;
 display: block;
+margin: 12px;
+margin-left: 20px;
+padding: 4px;
+margin-top: 30px;
+}
+.subContent{
+
+margin-left: 20px;
+
 }
 </style>
   </head>
 <body>
   <div class="container">
     <div class="left">
+
     </div>
     <div class="content">
-  <h1>Exclavia Github</h1>
-<hr>
-  <h2>
-    <a href="/ExsNetworkScan">ExsNetworkScan Page</a>
-  </h2>
+  <span class="topHeader">Exclavia's Github - Git.Exclavia.Network</span>
+<hr color="#707274">
+<div class="subContent">
+<br>
+<span style="letter-spacing:2px; font-size:32px;">ExsNetworkScan </span>- <a style="font-size:25px;" href="/ExsNetworkScan">GitPage</a>
+
+         <div class="conSpan">
+     
+   
+   <a href="https://github.com/Exclavia/ExsNetworkScan">Repository</a><br>
+   <a href="https://github.com/Exclavia/ExsNetworkScan/commits">Commits</a><br>
+   <a href="https://github.com/Exclavia/ExsNetworkScan/issues">Issues</a>
+   <br><br>
+   - Master.zip <a href="https://github.com/Exclavia/ExsNetworkScan/archive/refs/heads/master.zip"  target="_blank">download</a>
+    <br>
+    </div>
+   <br>
+   <span class="badgeSpan">
+        <a href="https://test.pypi.org/project/ExsNetworkScan/"  target="_blank"><img alt="PyPi" src="https://img.shields.io/pypi/status/ExsNetworkScan?pypiBaseUrl=https%3A%2F%2Ftest.pypi.org&style=flat-square"></a>
+        <a href="https://github.com/Exclavia/ExsNetworkScan/blob/master/LICENSE"  target="_blank"><img alt="GitHub License" src="https://img.shields.io/github/license/Exclavia/ExsNetworkScan?style=flat-square"></a>
+   </span>
+        </div>
     </div>
   </div>
 </body>
