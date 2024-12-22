@@ -74,7 +74,7 @@ img {
 	border-bottom-width: 1px;
 }
 
-.feedHead {
+.rssHead {
 	font-size: 25px;
 	margin-bottom: 10px;
 	padding: 10px;
@@ -89,7 +89,6 @@ img {
 	width: 99%;
 	padding: 14px;
 	font-size: 20px;
-
 }
 
 
