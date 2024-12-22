@@ -1,0 +1,117 @@
+* {
+	scrollbar-color: #454a4d #202324;
+}
+
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+
+body {
+	background-color: #181a1b;
+	color: #cecac3;
+	​font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	line-height: 1;
+	font-weight: lighter;
+}
+
+a:link {
+	text-decoration: none;
+	color: #0074a6;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #0074a6;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #57a2c2;
+}
+
+a:active {
+	text-decoration: none;
+	color: #57a2c2;
+}
+
+img {
+	margin-right: 4px;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+.topHeader {
+	font-size: 44px;
+	width: 100%;
+	padding: 10px;
+	border-bottom-style: solid;
+	border-bottom-color: #353a3c;
+	border-bottom-width: 1px;
+}
+
+.conSpan {
+	background-color: rgb(28, 30, 31);
+	width: 99%;
+	padding: 14px;
+	font-size: 20px;
+
+}
+
+.conSpan2 {
+	background-color: rgb(28, 30, 31);
+	width: 99%;
+	padding: 14px;
+	font-size: 20px;
+
+}
+
+.content {
+	margin: auto;
+	width: 50%;
+	text-align: left;
+	padding: 10px;
+	margin-top: 24px;
+}
+
+.repoHead {
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 100%;
+	border-bottom-style: solid;
+	border-bottom-color: #353a3c;
+	border-bottom-width: 1px;
+}
+
+.foot {
+	margin-top: 14px;
+	padding: 15px;
+	width: 100%;
+	text-align: center;
+	border-top-style: solid;
+	border-top-color: #353a3c;
+	border-top-width: 1px;
+}
+
+.subContent {}
+
+.badgeSpan {}
+
+.feed-item {
+	border-bottom: 1px solid #353a3c;
+	padding: 10px 0;
+}
+
+.feed-item h3 {
+	margin: 0;
+	font-size: 1.2em;
+}
+
+.feed-item p {
+	color: #afa59d;
+	font-size: 0.9em;
+}
