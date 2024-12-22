@@ -62,13 +62,6 @@ img {
 
 }
 
-.conSpan2 {
-	background-color: rgb(28, 30, 31);
-	width: 99%;
-	padding: 14px;
-	font-size: 20px;
-
-}
 
 .content {
 	margin: auto;
@@ -80,6 +73,16 @@ img {
 
 .repoHead {
 	margin-bottom: 10px;
+	font-size: 34px;
+	padding: 10px;
+	width: 100%;
+	border-bottom-style: solid;
+	border-bottom-color: #353a3c;
+	border-bottom-width: 1px;
+}
+.feedHead {
+	margin-bottom: 10px;
+	font-size: 25px;
 	padding: 10px;
 	width: 100%;
 	border-bottom-style: solid;
@@ -108,10 +111,17 @@ img {
 
 .feed-item h3 {
 	margin: 0;
-	font-size: 1.2em;
+	
 }
 
 .feed-item p {
 	color: #afa59d;
-	font-size: 0.9em;
+	
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="content"] {
+    width: 100%;
+  }
 }
