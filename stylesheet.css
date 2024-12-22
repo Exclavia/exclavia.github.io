@@ -90,20 +90,17 @@ a:active {
 	padding: 10px;
 }
 
-.rLink {
-	width: 98%;
-	font-size: 28px;
-	padding-top: 10px;
-	padding-bottom: 5px;
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	border-bottom-color: #353a3c;
-
-}
 
 .leftCon {
 	width: 100%;
 	padding: 10px;
+}
+
+.leftCon p {
+	font-size: 28px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #353a3c;
 }
 
 .imgCon {
