@@ -36,9 +36,6 @@ a:active {
 	color: #57a2c2;
 }
 
-img {
-	margin-right: 4px;
-}
 
 .container {
 	width: 100%;
@@ -54,11 +51,10 @@ img {
 }
 
 
-
 .topHeader {
 	font-size: 44px;
 	width: 100%;
-	padding: 10px;
+	padding: 14px;
 	border-bottom-style: solid;
 	border-bottom-color: #353a3c;
 	border-bottom-width: 1px;
@@ -76,9 +72,11 @@ img {
 
 .rssHead {
 	font-size: 25px;
+	font-style: italic;
 	margin-bottom: 10px;
 	padding: 10px;
 	width: 100%;
+	display: block;
 	border-bottom-style: solid;
 	border-bottom-color: #353a3c;
 	border-bottom-width: 1px;
@@ -86,15 +84,43 @@ img {
 
 .conSpan {
 	background-color: rgb(28, 30, 31);
-	width: 99%;
-	padding: 14px;
+	width: 100%;
+	height: auto;
 	font-size: 20px;
+	padding: 10px;
 }
 
+.rLink {
+	width: 98%;
+	font-size: 28px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #353a3c;
+
+}
+
+.leftCon {
+	width: 100%;
+	padding: 10px;
+}
+
+.imgCon {
+	margin-top: 10px;
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+}
+
+.badgeImg {
+	margin: auto;
+	padding: 5px;
+}
 
 .foot {
 	margin-top: 14px;
-	padding: 15px;
+	padding: 18px;
 	width: 100%;
 	text-align: center;
 	border-top-style: solid;
@@ -104,22 +130,16 @@ img {
 
 .feed-item {
 	border-bottom: 1px solid #353a3c;
-	padding: 10px 0;
+	padding: 10px;
 }
 
 .feed-item h3 {
-	margin: 0;
-	
+	font-size: 18px;
 }
 
 .feed-item p {
+	font-size: 14px;
+	font-style: italic;
 	color: #afa59d;
-	
-}
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="content"] {
-    width: 100%;
-  }
 }
