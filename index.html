@@ -11,95 +11,22 @@
             <div class="topHeader"><img src="letterlogo.png" width="40%"></div>
             <br>
             <br>
-            <div class="repoHead">ExsNetworkScan</div>
+            <div class="repoHead">Satellite Tracker</div>
             <div class="conSpan">
                <div class="leftCon">
-                  <div class="badgeImg">
-                     <a href="https://test.pypi.org/project/ExsNetworkScan/" target="_blank"><img alt="TestPyPi" src="https://img.shields.io/pypi/status/ExsNetworkScan?pypiBaseUrl=https%3A%2F%2Ftest.pypi.org&style=for-the-badge&label=TestPyPi">
-                     <img alt="PyPI - Version" src="https://img.shields.io/pypi/v/ExsNetworkScan?pypiBaseUrl=https%3A%2F%2Ftest.pypi.org&style=for-the-badge&label=TestPyPi"></a>
-                     <a href="https://exclavia.github.io/ExsNetworkScan" target="_blank"><img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fexclavia.github.io%2FExsNetworkScan%2F&style=for-the-badge"></a>
-                     <a href="https://exclavia.github.io/license/" target="_blank"> <img alt="GitHub License" src="https://img.shields.io/github/license/Exclavia/ExsNetworkScan?style=for-the-badge"></a>
-                     
-                  </div>
                   <br>
-                  <p><a href="https://github.com/Exclavia/ExsNetworkScan" target="_blank">Repository</a></p>
-                  <p><a href="https://github.com/Exclavia/ExsNetworkScan/releases" target="_blank">Releases</a></p>
-                  <p><a href="https://github.com/Exclavia/ExsNetworkScan/commits" target="_blank">Commits</a></p>
-                  <p><a href="https://github.com/Exclavia/ExsNetworkScan/issues" target="_blank">Issues</a></p>
+                  <p><a href="https://github.com/Exclavia/Satellite-Tracker" target="_blank">Repository</a></p>
+                  <p><a href="https://github.com/Exclavia/Satellite-Tracker/commits" target="_blank">Commits</a></p>
+                  <p><a href="https://github.com/Exclavia/Satellite-Tracker/issues" target="_blank">Issues</a></p>
                </div>
                <div class="imgCon">
-                  <img src="https://raw.githubusercontent.com/Exclavia/exclavia.github.io/refs/heads/main/git.png" style="width:100%;">
+                  <img src="https://github.com/Exclavia/Satellite-Tracker/blob/main/images/icon.png" style="width:100%;">
                   <br><br>
-                  <i>Scan your home network easily. See what devices are currently connected.</i><br><br>
+                  <i>Python scripts for tracking satellite upcoming pass over a given latitude and longitude.</i><br><br>
                </div>
             </div>
             <br><br>
-            <div class="rssHead">TestPyPi recent releases - <a href="https://test.pypi.org/project/ExsNetworkScan/" target="_blank">Project Page</a></div>
-            <div class="conSpan">
-               <div id="feed-container"></div>
-               <script>
-                  // Function to fetch RSS feed using Fetch API with a CORS Proxy
-                  async function fetchRSSWithProxy(proxyUrl, rssUrl) {
-                      try {
-                          const response = await fetch(`${proxyUrl}${encodeURIComponent(rssUrl)}`);
-                          if (!response.ok) {
-                              throw new Error(`HTTP error! status: ${response.status}`);
-                          }
-                          const data = await response.json();
-                          return data.contents; // Access the RSS data
-                      } catch (error) {
-                          console.error('Error fetching RSS feed through proxy:', error);
-                      }
-                  }
-                  
-                  // Function to parse RSS feed using DOMParser
-                  function parseRSS(rssText) {
-                      const parser = new DOMParser();
-                      const xmlDoc = parser.parseFromString(rssText, 'application/xml');
-                      return xmlDoc;
-                  }
-                  
-                  // Function to extract items from the parsed XML
-                  function extractFeedItems(xmlDoc) {
-                      const items = xmlDoc.getElementsByTagName('item');
-                      const feedItems = [];
-                  
-                      for (let i = 0; i < items.length; i++) {
-                          const title = items[i].getElementsByTagName('title')[0].textContent;
-                          const link = items[i].getElementsByTagName('link')[0].textContent;
-                          const pubDate = items[i].getElementsByTagName('pubDate')[0]?.textContent;
-                          feedItems.push({ title, link, pubDate });
-                      }
-                  
-                      return feedItems;
-                  }
-                  
-                  // Function to display feed items in HTML
-                  function displayFeedItems(feedItems) {
-                      const container = document.getElementById('feed-container');
-                      container.innerHTML = feedItems
-                          .map(
-                              (item) => `
-                              <div class="feed-item">
-                                  <h2><a href="${item.link}" target="_blank">${item.title}</a></h2>
-                                  <p>${item.pubDate}</p>
-                              </div>
-                          `
-                          )
-                          .join('');
-                  }
-                  
-                  // Fetch, parse, and display RSS feed
-                  const proxyUrl = 'https://api.allorigins.win/get?url='; // Public CORS proxy
-                  const rssUrl = 'https://test.pypi.org/rss/project/exsnetworkscan/releases.xml'; // BBC News RSS Feed
-                  fetchRSSWithProxy(proxyUrl, rssUrl).then((rssText) => {
-                      const xmlDoc = parseRSS(rssText);
-                      const feedItems = extractFeedItems(xmlDoc);
-                      displayFeedItems(feedItems);
-                  });
-               </script>
-               <br>
-            </div>
+         
             <br>
             <div class="foot"><i>Exclavia Network - 2025 - <a href="https://github.com/Exclavia" target="_blank">GitHub</a> - <a href="https://exclavia.network/" target="_blank">Main</a></i></div>
          </div>
